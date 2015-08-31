@@ -1,8 +1,19 @@
 $icon-font-path: '../fonts/';
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100italic,100);
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+$gray: #4F4F4F;
+$red: #F76868;
+$blue: #0040E7;
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: $gray;
+}
+
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -89,5 +100,214 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+
+
+
+#landing_page {
+  .col-md-6 {
+    padding-top: 56px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .design_title {
+    p {
+      font-size: 34px;
+      display: inline-block;
+      padding: 14px;
+      border: 3px solid white;
+    }
+    &:hover {
+      p {
+        border: 3px solid $gray;
+      }
+    }
+  }
+  .guideline_title {
+    text-align: right;
+    p {
+      margin-top: 35px;
+      font-size: 34px;
+      display: inline-block;
+      padding: 14px;
+      border: 3px solid white;
+    }
+    &:hover {
+      p {
+        border: 3px solid $gray;
+      }
+    }
+  }
+  a {
+    color: $gray !important;
+    &:hover {
+      color: $gray !important;
+    }
+  } 
+  h1 {
+    font-size: 11em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+}
+
+#navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .col-xs-10 {
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 4px solid $gray;
+    .col-md-9 {
+      text-align: right;
+    }
+  }
+  a {
+    color: $gray;
+  }
+}
+
+#design_show {
+  .col-md-5 {
+    height: 80vh;
+    text-align: right;
+    margin-top: 35px;
+    h1 {
+      font-size: 9em;
+      font-weight: 700;
+    }    
+  }
+  .col-md-5.reverse {
+    text-align: left;
+  }
+  .col-md-7.reverse {
+    img {
+      height: 200px;
+      margin-top: 100px;
+      margin-right: 70px;
+    }
+    text-align: right;
+  }
+  .col-md-7 {
+    img {
+      height: 300px;
+      margin-left: 70px;
+    }
+    h2, span {
+      font-size: 34px;   
+    }
+    .d1 {
+      color: $red; 
+      position: absolute;
+      left: 100px;
+      top: 400px;
+      span {
+        color: $red; 
+        margin-left: 22px;
+      }  
+    }
+    .d2 {
+      position: absolute;
+      top: 140px;
+      left: 100px;      
+      span {
+        margin-left: 22px;
+      }
+    }
+    .d3 {
+      position: absolute;
+      left: 100px;
+      top: 270px;
+      span {
+        margin-left: 22px;
+      }
+    }
+  }
+}
+
+#guide_show {
+  #dark_style {
+    .logo {
+      position: relative;
+      left: 10%;
+      top: 95px;
+      span {
+        position: absolute;
+        right: 40px;
+        top: 200px;
+        height: 9px;
+        width: 38px;
+        display: inline-block;
+        background-color: #70EFE8;
+      }
+      img {
+        position: absolute;
+        height: 70px;
+        top: 130px;
+        left: 63px;
+      }
+      .logo_bg {
+        position: relative;
+        height: 350px;
+        width: 350px;
+        background-color: #1F2347;
+      }    
+    }    
+    h1 {
+      margin-top: 100px;
+      font-size: 4em;
+    }
+  }
+
+
+  .color_list {
+    margin-top: 70px;
+    ul {
+      list-style-type: none;
+      font-size: 20px;
+      .main {
+        span {
+          background-color: #1F2347;
+        }
+      }
+      .second {
+        span {
+          background-color: #213670;
+        }
+      }
+      .third {
+        span {
+          background-color: #70EFE8;
+        }
+      }
+      .fourth {
+        span {
+          background-color: #36CEBF;
+        }
+      }
+      .white {
+        span {
+          border: 1px solid $gray;
+        }
+      }   
+      span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        position: relative;
+        top: 3px;
+        right: 14px;
+      }
+      li {
+        margin-top: 21px;
+        cursor:pointer;          
+      }
+    }
   }
 }
